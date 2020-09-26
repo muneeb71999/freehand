@@ -1,0 +1,125 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+  border-bottom: 1px solid #efeef3;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+
+  &__logo {
+    height: 2.2rem;
+    width: auto;
+  }
+
+  &__links {
+    // width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width: $three) {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+  &__link {
+    color: #000000;
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin: 0 1rem;
+    text-decoration: none;
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width: $three) {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+  &__btn {
+    @extend .btn;
+  }
+
+  &__toggle {
+    @extend .btn;
+    background-color: white;
+    border: none;
+    // font-size: 3rem;
+    display: none;
+    padding: 1rem;
+    align-self: center;
+    @media screen and (max-width: $three) {
+      display: block;
+    }
+
+    &__icon {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+  }
+
+  &__mobile {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    position: fixed;
+    top: 85px;
+    right: -100%;
+    width: 100%;
+    background-color: white;
+    padding: 2rem;
+    transition: all 0.2s ease-in-out;
+    height: 100vh;
+    display: none;
+
+    @media screen and (max-width: 570px) {
+      display: block;
+    }
+
+    &__btns {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+    &__btn {
+      @extend .btn;
+      margin: 1rem 0;
+    }
+    &__links {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    &__link {
+      color: #000000;
+      display: inline-block;
+      padding: 1rem;
+      font-size: 1.6rem;
+      font-family: "Roboto", sans-serif;
+      text-transform: capitalize;
+      font-weight: 500;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+  }
+}
+
+.show {
+  transform: translate(-100%, 0px);
+}

@@ -1,0 +1,143 @@
+.btn {
+  padding: 1rem 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  margin-left: 1.5rem;
+  font-size: 1.6rem;
+  border-radius: 4px;
+  text-transform: capitalize;
+  cursor: pointer;
+
+  &-primary {
+    background: white;
+    color: #16133e;
+    border: 1px solid #16133e;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      background: #16133e;
+      color: white;
+    }
+  }
+
+  &-secondary {
+    background-color: #16133e;
+    color: white;
+    border: 1px solid #16133e;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background: white;
+      color: #16133e;
+    }
+  }
+
+  &-blue {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    &-fill {
+      @extend .btn;
+      @extend .btn-blue;
+      color: white;
+      background-color: #007ffc;
+      border: 1px solid #007ffc;
+      margin: 0;
+      &:hover {
+        color: #007ffc;
+        background-color: white;
+        border: 1px solid #007ffc;
+      }
+    }
+
+    &-border {
+      @extend .btn;
+      @extend .btn-blue;
+
+      color: #007ffc;
+      background-color: white;
+      border: 1px solid #007ffc;
+      margin: 0;
+      &:hover {
+        color: white;
+        background-color: #007ffc;
+        border: 1px solid #007ffc;
+      }
+    }
+  }
+}
+
+.heading {
+  &-primary {
+    font-size: 5.6rem;
+    font-weight: 600;
+    font-family: "Nunito Sans", "Roboto", sans-serif;
+    line-height: 6rem;
+    margin-bottom: 1.6rem;
+    @media screen and (max-width: $one) {
+      font-size: 5rem;
+    }
+
+    @media screen and (max-width: $seven) {
+      font-size: 4rem;
+      line-height: 4.4rem;
+    }
+  }
+
+  &-secondary {
+    font-size: 4rem;
+    font-weight: 600;
+    font-family: "Nunito Sans", "Roboto", sans-serif;
+    margin-bottom: 1rem;
+    @media screen and (max-width: $one) {
+      font-size: 3.4rem;
+    }
+
+    @media screen and (max-width: $seven) {
+      font-size: 3rem;
+    }
+  }
+
+  &-tertiary {
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 1.4rem;
+    color: #87a1b6;
+    @media screen and (max-width: $one) {
+      font-size: 1.5rem;
+    }
+
+    @media screen and (max-width: $seven) {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.subheading {
+  &-primary {
+    font-size: 1.9rem;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    @media screen and (max-width: $one) {
+      font-size: 1.8rem;
+    }
+
+    @media screen and (max-width: $seven) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &-secondary {
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    color: #5a7184;
+    @media screen and (max-width: $one) {
+      font-size: 1.5rem;
+    }
+
+    @media screen and (max-width: $seven) {
+      font-size: 1.6rem;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.card {
+  padding: 3rem;
+  border-radius: 8px;
+  border: 1px solid #e5eaf4;
+
+  &-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2.4rem;
+    margin-top: 4.2rem;
+  }
+
+  &__heading {
+    font-size: 2.4rem;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 1rem;
+  }
+
+  &__desc {
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    line-height: 2rem;
+    margin-bottom: 1.2rem;
+    padding: 1rem 0;
+    @media screen and (max-width: $one) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__btn {
+    color: #16133e;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    @media screen and (max-width: $one) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__logo {
+    vertical-align: top;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+  }
+}

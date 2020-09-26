@@ -1,0 +1,60 @@
+.sale-card {
+  padding: 5rem 2rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  font-family: "Roboto", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+  gap: 2rem;
+  box-shadow: 0 2px 35px transparentize($color: #000000, $amount: 0.95);
+  border-radius: 0 0 8px 8px;
+
+  border-top-width: 4px;
+  border-top-style: solid;
+  &__heading {
+    font-size: 2rem;
+    color: #16133e;
+    font-weight: 400;
+    text-transform: capitalize;
+  }
+
+  &__title {
+    font-size: 3.6rem;
+    font-weight: 700;
+  }
+
+  &__subtitle,
+  &__info {
+    font-size: 1.5rem;
+    color: #87a1b6;
+  }
+
+  &__subtitle {
+    margin-top: -2rem;
+  }
+
+  &__info {
+    max-width: 70%;
+    margin: 2rem 0;
+  }
+
+  &__btn {
+    padding: 1rem 3rem;
+    border-radius: 50px;
+    border: 1px solid #16133e;
+    background-color: white;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #16133e;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 0.2 ease-in-out;
+
+    &:hover {
+      color: white;
+      background-color: #16133e;
+    }
+  }
+}
