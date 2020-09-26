@@ -42,8 +42,8 @@ a {
 .section {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(280px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2.4rem;
   margin-top: 6.2rem;
 }
@@ -158,6 +158,12 @@ a {
   .heading-primary {
     font-size: 4rem;
     line-height: 4.4rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .heading-primary {
+    font-size: 3.6rem;
   }
 }
 
@@ -470,6 +476,22 @@ a {
   margin-top: 3.2rem;
 }
 
+@media screen and (max-width: 480px) {
+  .hero__cta {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 1.4rem;
+  }
+}
+
 .hero__left, .hero__right {
   padding: 0 2rem 0 0;
 }
@@ -672,6 +694,18 @@ a {
   height: 38rem;
   color: white;
   text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .cta {
+    height: 48rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .cta {
+    height: 52rem;
+  }
 }
 
 .cta__title {

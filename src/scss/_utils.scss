@@ -80,6 +80,10 @@
       font-size: 4rem;
       line-height: 4.4rem;
     }
+
+    @media screen and (max-width: $ten) {
+      font-size: 3.6rem;
+    }
   }
 
   &-secondary {
