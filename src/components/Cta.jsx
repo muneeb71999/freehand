@@ -8,8 +8,12 @@ const Cta = () => {
         No contact, no set-up costs, just awesome way to organise your money.
       </p>
       <div className="cta__btns">
-        <button className="cta__btn__primary">Try if fro free</button>
-        <button className="cta__btn__secondary">Watch Demo</button>
+        <button className="cta__btn__primary" aria-label="Try if fro free">
+          Try if fro free
+        </button>
+        <button className="cta__btn__secondary" aria-label="Watch Demo">
+          Watch Demo
+        </button>
       </div>
     </div>
   );

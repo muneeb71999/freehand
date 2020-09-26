@@ -33,8 +33,12 @@ const Navbar = () => {
       </div>
       <div className="nav__right">
         <div className="nav__btns">
-          <button className="nav__btn btn-primary">Sign in</button>
-          <button className="nav__btn btn-secondary">Sign up</button>
+          <button className="nav__btn btn-primary" aria-label="Sign in">
+            Sign in
+          </button>
+          <button className="nav__btn btn-secondary" aria-label="Sign up">
+            Sign up
+          </button>
         </div>
       </div>
       <div className={isOpen ? "show nav__mobile" : "nav__mobile"}>
@@ -53,8 +57,15 @@ const Navbar = () => {
           </a>
         </div>
         <div className="nav__mobile__btns ">
-          <button className="nav__mobile__btn btn-primary">Sign in</button>
-          <button className="nav__mobile__btn btn-secondary">Sign up</button>
+          <button className="nav__mobile__btn btn-primary" aria-label="Sign in">
+            Sign in
+          </button>
+          <button
+            className="nav__mobile__btn btn-secondary"
+            aria-label="Sign up"
+          >
+            Sign up
+          </button>
         </div>
       </div>
       <button className="nav__toggle" onClick={toggleNavbar}>

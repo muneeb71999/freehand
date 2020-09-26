@@ -13,8 +13,12 @@ const Hero = () => {
         </p>
 
         <div className="hero__cta">
-          <button className="btn-blue-fill">View Projects</button>
-          <button className="btn-blue-border">Learn More</button>
+          <button className="btn-blue-fill" aria-label="View Projects">
+            View Projects
+          </button>
+          <button className="btn-blue-border" aria-label="Learn More">
+            Learn More
+          </button>
         </div>
       </div>
       <div className="hero__right">
