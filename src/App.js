@@ -6,6 +6,7 @@ import Blog from "./components/Blog";
 import Sales from "./components/Sales";
 import Cta from "./components/Cta";
 import Footer from "./components/Footer";
+import "./index.css";
 
 function App() {
   return (

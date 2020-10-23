@@ -255,13 +255,21 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 2rem 3rem;
-  border-bottom: 1px solid #efeef3;
   max-width: var(--max-width);
-  margin: 0 auto;
   background-color: white;
-  position: fixed;
+  margin: 0 auto;
   width: 100%;
   z-index: 1000;
+}
+
+.nav__container {
+  border-bottom: 1px solid #efeef3;
+  background-color: white;
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 
 .nav__logo {
@@ -440,7 +448,6 @@ a {
   height: 100%;
   margin: 0 auto;
   padding: 1rem 4rem;
-  margin-top: 8rem;
 }
 
 @media screen and (max-width: 962px) {
@@ -694,6 +701,7 @@ a {
   height: 38rem;
   color: white;
   text-align: center;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 480px) {
@@ -769,6 +777,8 @@ a {
   -ms-grid-columns: 30rem 1fr;
       grid-template-columns: 30rem 1fr;
   gap: 2.4rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
   padding: 6rem 4rem;
   max-width: var(--max-width);
   width: 100%;

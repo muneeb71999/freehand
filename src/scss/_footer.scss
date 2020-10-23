@@ -2,6 +2,8 @@
   display: grid;
   grid-template-columns: 30rem 1fr;
   gap: 2.4rem;
+  max-width : var(--max-width);
+  margin: 0 auto;
 
   @media screen and (max-width: $six) {
     display: flex;
